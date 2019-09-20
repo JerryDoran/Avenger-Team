@@ -1,0 +1,236 @@
+/* GLOBAL STYLES AND RESETS */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Robot', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* MAIN CONTENT STYLES */
+
+section {
+  margin: 0 auto;
+  padding: 10rem 0;
+  overflow-x: hidden;
+}
+
+.heading {
+  text-transform: uppercase;
+  font-size: 2rem;
+  letter-spacing: 3px;
+
+  /* Helps offset the letter spacing because it moves it a little to the right */
+  margin-right: -3px;
+  margin-bottom: 5rem;
+  text-align: center;
+  color: #333;
+  position: relative;
+}
+
+.heading::after {
+  content: '';
+  width: 8rem;
+  height: 0.5rem;
+  background-color: #45e19f;
+  position: absolute;
+  bottom: -2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2rem;
+}
+
+.card-wrapper {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.card {
+  width: 25rem;
+  background-color: #ebeef8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+  box-shadow: 0.5rem 0.5rem 3rem rgba(0, 0, 0, 0.2);
+}
+
+.card .card-img {
+  width: 100%;
+  height: 24rem;
+  object-fit: cover;
+  clip-path: polygon(0 0, 100% 0, 100% 78%, 0% 100%);
+}
+
+.card .profile-img {
+  width: 15rem;
+  height: 15rem;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-top: -10rem;
+  z-index: 5;
+  border: 0.75rem solid #ebeef8;
+}
+
+.card h1 {
+  font-size: 2rem;
+  color: #333;
+  margin: 1.25rem 0;
+}
+
+.job-title {
+  color: #777;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.about {
+  width: 80%;
+  height: 60%;
+  font-size: 1.3rem;
+  margin: 1.5rem 0;
+  padding: 0.8rem;
+  font-style: italic;
+  text-align: center;
+  color: #333;
+}
+
+.card .btn {
+  padding: 1rem 2rem;
+  background-color: #445ae3;
+  border-radius: 2rem;
+  margin: 1rem;
+  text-transform: uppercase;
+  color: #eee;
+  transition: all 0.5s;
+}
+
+.card .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0.5rem 0.5rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.card .btn:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+.social-media {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2rem 5rem;
+  margin-top: 1.5rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.social-media i {
+  font-size: 3rem;
+  transition: color 0.5s;
+}
+
+.fa-facebook-square {
+  color: #3b5999;
+}
+.fa-twitter-square {
+  color: #55acee;
+}
+.fa-instagram {
+  color: #e6683c;
+}
+.fa-google-plus-square {
+  color: #dd4b39;
+}
+
+.fa-facebook-square:hover,
+.fa-twitter-square:hover,
+.fa-instagram:hover,
+.fa-google-plus-square:hover {
+  color: #45e19f;
+}
+
+@media screen and (min-width: 900px) {
+  .card-wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    /* This will make the card's height even */
+    align-items: stretch;
+  }
+
+  .card .card-img {
+    width: 100%;
+    height: 15rem;
+    object-fit: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 78%, 0% 100%);
+  }
+
+  .card .profile-img {
+    width: 10rem;
+    height: 10rem;
+    margin-top: -7rem;
+  }
+
+  .about {
+    font-size: 1rem;
+    width: 100%;
+    height: 25%;
+  }
+
+  .social-media {
+    margin-bottom: 0;
+    padding-top: 1rem;
+    padding-bottom: 0;
+  }
+
+  .social-media i {
+    padding: 1rem;
+  }
+
+  .card {
+    width: 20rem;
+    margin: 0 2rem;
+    transition: all 0.5s;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .card:nth-child(1) {
+    animation: fadeIn 0.5s 0.5s backwards;
+  }
+  .card:nth-child(2) {
+    animation: fadeIn 0.5s 1s backwards;
+  }
+  .card:nth-child(3) {
+    animation: fadeIn 0.5s 1.5s backwards;
+  }
+  .card:nth-child(4) {
+    animation: fadeIn 0.5s 2s backwards;
+  }
+
+  .card:hover {
+    transform: scale(1.05);
+  }
+}
