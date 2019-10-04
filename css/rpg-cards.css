@@ -43,19 +43,19 @@ body {
 
 .card-image {
   grid-area: image;
-  background: url('images/image1.jpg') center/cover;
+  background: url('/images/image1.jpg') center/cover;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
 .card-image-two {
   grid-area: image;
-  background: url('images/image2.jpg') center/cover;
+  background: url('/images/image2.jpg') center/cover;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
 .card-image-three {
   grid-area: image;
-  background: url('images/image3.jpg') center/cover;
+  background: url('/images/image3.jpg') center/cover;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
@@ -208,6 +208,6 @@ body {
 }
 
 .card:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
 }
