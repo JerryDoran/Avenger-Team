@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/6f92449565.js"></script>
+
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="css/swiper.min.css" />
+    <link rel="stylesheet" href="css/touch-slider.css" />
+
+    <title>Touch Slider</title>
+  </head>
+  <body>
+    <!-- Swiper -->
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="imgBx">
+            <img src="images/image1.jpg" alt="" />
+          </div>
+          <div class="details">
+            <h3>City Image<br /><span>Explore</span></h3>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="imgBx">
+            <img src="images/image2.jpg" alt="" />
+          </div>
+          <div class="details">
+            <h3>City Image<br /><span>Explore</span></h3>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="imgBx">
+            <img src="images/image3.jpg" alt="" />
+          </div>
+          <div class="details">
+            <h3>City Image<br /><span>Explore</span></h3>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="imgBx">
+            <img src="images/image4.jpg" alt="" />
+          </div>
+          <div class="details">
+            <h3>City Image<br /><span>Explore</span></h3>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="imgBx">
+            <img src="images/image5.jpg" alt="" />
+          </div>
+          <div class="details">
+            <h3>City Image<br /><span>Explore</span></h3>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="imgBx">
+            <img src="images/image6.jpg" alt="" />
+          </div>
+          <div class="details">
+            <h3>City Image<br /><span>Explore</span></h3>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="imgBx">
+            <img src="images/image7.jpg" alt="" />
+          </div>
+          <div class="details">
+            <h3>City Image<br /><span>Explore</span></h3>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="imgBx">
+            <img src="images/image8.jpg" alt="" />
+          </div>
+          <div class="details">
+            <h3>City Image<br /><span>Explore</span></h3>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="imgBx">
+            <img src="images/image9.jpg" alt="" />
+          </div>
+          <div class="details">
+            <h3>City Image<br /><span>Explore</span></h3>
+          </div>
+        </div>
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
+    <script src="/js/swiper.min.js"></script>
+    <script>
+      var swiper = new Swiper('.swiper-container', {
+        effect: 'coverflow',
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        coverflowEffect: {
+          rotate: 60,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true
+        },
+        pagination: {
+          el: '.swiper-pagination'
+        }
+      });
+    </script>
+  </body>
+</html>
